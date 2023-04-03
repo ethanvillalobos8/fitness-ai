@@ -3,7 +3,7 @@ import Calculator from '@/components/Calculator';
 export default function bmr() {
     return (
         <div className="grid grid-cols-1 w-full content-center justify-items-center">
-            <div className="flex flex-col justify-center min-md:pl-6 pt-16 pb-14 w-3/4 max-w-6xl h-full space-y-8">
+            <div className="flex flex-col justify-center pt-16 pb-14 w-3/4 max-w-6xl h-full space-y-8">
                 <h1 className="text-4xl font-bold text-zinc-50">Basal Metabolic Rate <span className='text-[#F55959]'>(BMR)</span></h1>
                 <div className='flex'>
                     <p className='text-justify text-zinc-50'>
