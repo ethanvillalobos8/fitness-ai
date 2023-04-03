@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'meslo';
+    src: url('/fonts/meslo_regular.ttf') format('truetype');
+}  
