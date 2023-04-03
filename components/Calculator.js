@@ -32,7 +32,7 @@ const Calculator = () => {
     const renderTDEE = () => {
         return (
             tdeeValues.map((tdee, index) => (
-                <div key={index} className="grid grid-cols-5 content-center w-full h-full">
+                <div key={index} className="grid grid-cols-5 content-center w-full h-full self-center">
                     <h1 className="col-span-4 justify-self-start pl-4">{activityLevels[index].type} {activityLevels[index].details}</h1>
                     <h1 className="justify-self-end pr-4">{Math.round(tdee)}</h1>
                 </div>
@@ -41,13 +41,13 @@ const Calculator = () => {
     }
 
     return (
-        <div className='flex flex-col w-full h-5/6 bg-tertiary rounded-md drop-shadow-xl'>
-            <div className="grid grid-cols-2 w-full h-full">
-                <div>
+        <div className='flex flex-col w-full h-full bg-tertiary rounded-md drop-shadow-xl'>
+            <div className="grid grid-cols-2 min-[0px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-full h-full">
+                <div className="flex flex-col w-full h-full">
                     <h1 className="text-2xl font-bold text-left pt-6 pl-6 w-full text-zinc-50 ">Calculate Your BMR</h1>
                     <div className="flex flex-row w-full h-full items-center justify-center">
-                        <div className="flex flex-col w-full h-full">
-                            <div className="flex flex-col w-full px-10 space-y-4">
+                        <div className="flex flex-col w-full h-full pb-14 sm:pb-0 items-center justify-center">
+                            <div className="flex flex-col w-full px-10 space-y-4 pb-10 justify-center">
                                 <div className="flex items-center pt-10">
                                     <label htmlFor="age" className="w-1/3 font-medium text-white">Age</label>
                                     <input
@@ -107,10 +107,10 @@ const Calculator = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex w-full h-full bg-secondary rounded-r-md">
-                    <div className="flex flex-col w-full h-full">
-                        <h1 className="text-2xl font-bold text-center py-1 w-full rounded-tr-md text-zinc-50 bg-zinc-700">Results</h1>
-                        <h1 className="flex text-xl font-bold items-center justify-center text-center h-1/4 w-full text-zinc-50">BMR = {Math.round(bmr)} calroies/day</h1>
+                <div className="flex w-full h-full">
+                    <div className="flex flex-col w-full h-full bg-secondary rounded-r-md max-[767px]:rounded-b-md">
+                        <h1 className="text-2xl font-bold text-center py-1 w-full min-[0px]:rounded-none max-sm:rounded-none md:rounded-tr-md lg:rounded-tr-md xl:rounded-tr-md 2xl:rounded-tr-md text-zinc-50 bg-zinc-700">Results</h1>
+                        <h1 className="flex text-xl font-bold items-center justify-center text-center py-6 w-full text-zinc-50">BMR = {Math.round(bmr)} calroies/day</h1>
                         <div className="flex flex-col text-xl font-bold items-center justify-center text-center h-full w-full text-zinc-50">
                             <div className="grid grid-cols-4 text-sm self-start font-bold text-right py-2 w-full text-zinc-50 bg-zinc-700">
                                 <h1 className="col-span-3 justify-self-start pl-4">Activity</h1>

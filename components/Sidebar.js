@@ -15,12 +15,12 @@ const Sidebar = () => {
     const menuContent = ['BMI', 'BMR', 'Calories', 'Macro' ];
     const menuIsOpen = () => {
         return (
-            <div    className={`flex flex-col w-full h-full justify-center items-start gap-y-4 text-zinc-50 font-bold tracking-wide text-xl transition-opacity 
+            <div    className={`flex flex-col max-sm:flex-row max-sm:pt-1 w-full h-full justify-center items-start gap-y-4 text-zinc-50 font-bold tracking-wide text-xl max-sm:text-md transition-opacity 
                     ${isOpen ? "opacity-100" : "opacity-0"} transition-all duration-300 ease-in-out`}>
                 {menuContent.map((item, index) => {
                     return (
-                        <Link key={index} href={`/calculator/${item.toLowerCase()}`} className="flex w-full h-10 items-center px-6 hover:bg-primaryAccent hover:text-[#F55959]">
-                            <h1 className="text-left">{item}</h1>
+                        <Link key={index} href={`/calculator/${item.toLowerCase()}`} className="flex min-md:w-full h-10 items-center max-sm:justify-center px-6 max-sm:px-3.5 hover:bg-primaryAccent hover:text-[#F55959]">
+                            <h1 className="text-left max-sm:text-center">{item}</h1>
                         </Link>
                     );
                 })}
@@ -29,7 +29,7 @@ const Sidebar = () => {
     }
 
     return (
-        <div className={`absolute flex ${isOpen ? 'w-[140px] fixed left-0' : 'w-12'} rounded-r-lg drop-shadow-md transition-all duration-300 ease-in-out`} style={{ height: 'calc(100vh - 64px)' }}>
+        <div className={`absolute flex ${isOpen ? 'w-[140px] fixed left-0 max-sm:w-screen max-sm:top-13 max-sm:h-6' : 'w-12'} rounded-r-lg drop-shadow-md transition-all duration-300 ease-in-out`} style={{ height: 'calc(100vh - 64px)' }}>
             <div className="relative grid w-full h-full">
                 <div className="absolute top-0 right-0">
                     <button className="h-7 pt-3 pr-3" onClick={handleToggle}>
