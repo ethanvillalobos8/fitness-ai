@@ -17,9 +17,9 @@ const Sidebar = () => {
         return (
             <div    className={`flex flex-col w-full h-full justify-center items-start gap-y-4 text-zinc-50 font-bold tracking-wide text-xl transition-opacity 
                     ${isOpen ? "opacity-100" : "opacity-0"} transition-all duration-300 ease-in-out`}>
-                {menuContent.map((item) => {
+                {menuContent.map((item, index) => {
                     return (
-                        <Link href={`/calculator/${item.toLowerCase()}`} className="flex w-full h-10 items-center px-6 hover:bg-primaryAccent hover:text-[#F55959]">
+                        <Link key={index} href={`/calculator/${item.toLowerCase()}`} className="flex w-full h-10 items-center px-6 hover:bg-primaryAccent hover:text-[#F55959]">
                             <h1 className="text-left">{item}</h1>
                         </Link>
                     );

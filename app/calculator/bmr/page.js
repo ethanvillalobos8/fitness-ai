@@ -9,7 +9,7 @@ export default function bmr() {
                     <div className='flex'>
                         <p className='text-justify text-zinc-50'>
                             Your body requires energy to perform basic functions, such as breathing, circulating
-                            blood, and maintaining body temperature, even when you're at rest. This energy
+                            blood, and maintaining body temperature, even when you&apos;re at rest. This energy
                             requirement is known as your Basal Metabolic Rate (BMR), which is the minimum
                             amount of energy (measured in calories) that your body needs to perform its vital
                             functions while at rest.
