@@ -15,7 +15,7 @@ export default function bmr() {
                         important for weight loss because your body needs to burn stored fat for energy when it doesn&apos;t have enough calories 
                         from food. By consistently maintaining a caloric deficit over time, you can lose weight and improve your overall health. 
                         However, it&apos;s important to maintain a balanced diet and ensure that you are still consuming enough nutrients to support 
-                        your body's needs.
+                        your body&apos;s needs.
                     </p>
                 </div>
                 <div className='flex h-full'>
