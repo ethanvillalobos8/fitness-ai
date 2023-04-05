@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { bmr as BMR, tdee as TDEE } from '@/Calculations/bmr';
 
-const Calculator = () => {
+const BmrCalculator = () => {
     const [age, setAge] = useState(23);
     const [gender, setGender] = useState('male');
     const [height, setHeight] = useState(182.88); //6ft
@@ -127,4 +127,4 @@ const Calculator = () => {
     );
 };
 
-export default Calculator;
+export default BmrCalculator;
