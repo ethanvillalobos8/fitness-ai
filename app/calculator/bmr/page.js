@@ -1,4 +1,4 @@
-import Calculator from '@/components/Calculator';
+import BmrCalculator from '@/components/BmrCalculator';
 
 export default function bmr() {
     return (
@@ -18,7 +18,7 @@ export default function bmr() {
                     </p>
                 </div>
                 <div className='flex h-full'>
-                    <Calculator />
+                    <BmrCalculator />
                 </div>
             </div>
         </div>
